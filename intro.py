@@ -15,7 +15,7 @@ Common Quantitative Patterns
 #  any character or \@ will match a literal @ instead of being used in 
 # email patterns
 
-import re
+import re # Regular expressions module for pattern matching
 
 # Email Addresses
 def read_email(file):

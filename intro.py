@@ -21,8 +21,8 @@ import re
 def read_email(file):
     with open(file, 'r') as data:
         contents = data.read()
-        result = re.search(r'\w+\@\w+\.\w+', contents)
-        print(f"Read email: {result.group()}")
+        result = re.search(r'\w+\@\w+\.\w+', contents) # re.search() returns the 1st match object found. To find all matches, we can use re.findall() instead.
+        print(f"Read email: {result.group()}") # .group() extracts the matched string from the match object. If there are no matches, it will raise an AttributeError since result will be None. To avoid this, we can check if result is not None before calling .group().
 
 # IP Addresses
 def read_IP_Address(file):
@@ -43,4 +43,3 @@ if __name__ == "__main__":
     read_email(file)
     read_IP_Address(file)
     Address_finder(file)
-    Add regex patterns for email, IP address, and address extraction

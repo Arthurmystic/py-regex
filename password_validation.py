@@ -88,4 +88,4 @@ if __name__ == "__main__":
     else:
         print("Invalid choice. Please enter 1 or 2.")
 
-    print("\nPassword validation complete.")
+    

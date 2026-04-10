@@ -19,12 +19,7 @@ def joint_search(filename, text, text2):
       searched_text = [line for line in f if text in line and text2 in line]
       result2.append(searched_text)
       print (result2)
-        # for line in f:
-        #     if text in line and text2 in line:
-        #         print(line)
-        #         result2.append(line)
 
 joint_search('Secure.log', 'Failed', '3187')
 
-
-# search('secure.log', 'nobody')
+search('secure.log', 'nobody')
